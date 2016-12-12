@@ -1,0 +1,24 @@
+@(computadoras: java.util.List[Computer])
+
+<html>
+<head>
+<body>
+	<table cellspacing="1"  border="2px">
+		    <tr>
+		    	<th scope="col" bgcolor="#FFFF00">NOMBRE DE COMPUTADOR</th>
+		    	<th scope="col" bgcolor="#FFFF00">INTRODUCCION</th>
+		    	<th scope="col" bgcolor="#FFFF00">DESCONTINUADO</th>
+		    	<th scope="col" bgcolor="#FFFF00">COMPANIA</th>
+		    </tr>
+			@for(computer <- computadoras) {		   
+			  <tr>
+			      <td>@computer.name</td>
+			      <td></td>
+			      <td></td>
+			      <td></td>
+		      </tr>	
+		      }
+		 </table>
+</body>
+</head>
+</html>
